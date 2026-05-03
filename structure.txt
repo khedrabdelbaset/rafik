@@ -1,0 +1,15 @@
+/ (root)
+│
+├── index.html
+├── about/
+│   └── index.html
+├── services/
+│   └── index.html
+├── products/
+│   ├── doors/
+│   │   └── index.html
+│   └── windows/
+│       └── index.html
+├── assets/
+│   ├── css/style.css
+│   └── js/main.js

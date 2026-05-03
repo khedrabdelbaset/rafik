@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أعمال الألوميتال | أبواب وشبابيك وشتر</title>
+<meta name="description" content="تفصيل وتركيب أبواب وشبابيك وشتر ألوميتال بأفضل جودة وأسعار في السعودية">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#ff7700;--dark:#222;--light:#f8f9fa}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:#fff;color:var(--dark)}
+.container{max-width:1200px;margin:auto;padding:15px}
+header{position:fixed;width:100%;top:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);z-index:1000}
+.navbar{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:700}
+.logo span{color:var(--primary)}
+.nav-menu{display:flex;list-style:none}
+.nav-menu li{margin:0 10px}
+.nav-menu a{text-decoration:none;color:#222}
+.hamburger{display:none;cursor:pointer}
+.bar{width:25px;height:3px;background:#222;margin:4px 0}
+
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;color:#fff;display:flex;align-items:center;text-align:center}
+.hero h1{font-size:40px;margin-bottom:15px}
+.hero p{margin-bottom:20px}
+.btn{background:var(--primary);color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px}
+
+.section{padding:60px 0}
+.title{text-align:center;margin-bottom:30px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center}
+.card i{font-size:30px;color:var(--primary);margin-bottom:10px}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.projects img{width:100%;height:200px;object-fit:cover;border-radius:10px}
+
+footer{background:#222;color:#fff;padding:30px;text-align:center}
+
+@media(max-width:768px){
+.nav-menu{position:fixed;right:-100%;top:70px;flex-direction:column;background:#fff;width:100%;text-align:center}
+.nav-menu.active{right:0}
+.hamburger{display:block}
+.hero h1{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container navbar">
+<div class="logo">ألوميتال <span>برو</span></div>
+<ul class="nav-menu">
+<li><a href="#">الرئيسية</a></li>
+<li><a href="#services">الخدمات</a></li>
+<li><a href="#projects">الأعمال</a></li>
+<li><a href="#contact">اتصل بنا</a></li>
+</ul>
+<div class="hamburger">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>تفصيل أبواب وشبابيك وشتر ألوميتال</h1>
+<p>جودة عالية - أسعار منافسة - تنفيذ سريع</p>
+<a href="https://wa.me/966XXXXXXXX" class="btn">تواصل واتساب</a>
+</div>
+</section>
+
+<section id="services" class="section">
+<div class="container">
+<h2 class="title">خدماتنا</h2>
+<div class="services">
+<div class="card"><i class="fas fa-door-open"></i><h3>أبواب ألوميتال</h3><p>جرار ومفصلي لجميع الاستخدامات</p></div>
+<div class="card"><i class="fas fa-border-all"></i><h3>شبابيك ألوميتال</h3><p>عزل ممتاز وتصميم عصري</p></div>
+<div class="card"><i class="fas fa-bars"></i><h3>شتر ألوميتال</h3><p>حماية وأمان للمنازل والمحلات</p></div>
+<div class="card"><i class="fas fa-tools"></i><h3>صيانة</h3><p>إصلاح جميع مشاكل الألوميتال</p></div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="section">
+<div class="container">
+<h2 class="title">أعمالنا</h2>
+<div class="projects">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+<img src="https://images.unsplash.com/photo-1462826303086-329426d1aef5">
+</div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="container" style="text-align:center">
+<h2>تواصل معنا الآن</h2>
+<p>اتصل أو واتساب للحصول على عرض سعر</p>
+<a href="https://wa.me/966XXXXXXXX" class="btn">تواصل الآن</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+<script>
+const hamburger=document.querySelector('.hamburger');
+const navMenu=document.querySelector('.nav-menu');
+hamburger.onclick=()=>{navMenu.classList.toggle('active');}
+document.querySelectorAll('.nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});
+</script>
+
+</body>
+</html>
